@@ -3,4 +3,9 @@ Dica: utilize uma função de arredondamento.'''
 
 numero = float(input('Digite um número, inteiro ou decimal: ' ))
 
-print(f'Número digitado {numero} e ficou arredondado', round(numero,0)), 
+if numero % 1 == 0:
+    print('\nO número digitado é inteiro.')
+else:
+    print('\nO número digitado é decimal')
+
+print(f'\nNúmero digitado {numero} e ficou arredondado', round(numero,0)) 
